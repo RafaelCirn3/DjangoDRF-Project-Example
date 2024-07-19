@@ -9,4 +9,4 @@ class Personagem(models.Model):
 
     # Método que retorna uma string representando o objeto
     def __str__(self):
-        return self.nome
+        return f'{self.nome}, {self.descricao}'

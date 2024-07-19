@@ -5,8 +5,8 @@ class Arma(models.Model):
     # Campo de nome da arma
     nome = models.CharField(max_length=100)
     # Campo de poder da arma (um inteiro representando a força da arma)
-    poder = models.IntegerField()
+    nivel = models.IntegerField()
 
     # Método que retorna uma string representando o objeto
     def __str__(self):
-        return self.nome
+        return f'{self.nome}, Nível: {self.poder}'
