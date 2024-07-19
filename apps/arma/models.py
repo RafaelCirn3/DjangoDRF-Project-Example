@@ -9,4 +9,4 @@ class Arma(models.Model):
 
     # Método que retorna uma string representando o objeto
     def __str__(self):
-        return f'{self.nome}, Nível: {self.poder}'
+        return f'{self.nome}, Nível: {self.nivel}'
